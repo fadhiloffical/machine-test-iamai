@@ -23,6 +23,7 @@
     align-items: center;
     flex-direction: column;
     padding: 50px 0;
+    position: relative;
 }
 form {
   width: 100%;
@@ -33,11 +34,11 @@ form {
   align-items: center;
 }
 input{
-  color: #C7D3DD;
+  /* color: #C7D3DD; */
     display: block;
     width: 80%;
     height: 35px;
-    padding: 5px 5%;
+    padding: 8px 5%;
     border: 1px solid #ccc;
     -moz-border-radius: 27px;
     -webkit-border-radius: 27px;
@@ -50,6 +51,7 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 input:focus{
   outline: none;
@@ -89,4 +91,30 @@ button:focus{
 .Result h3 {
   font-style: italic;
   font-family: system-ui;
+}
+.Information,.Information:hover {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+
+  border: none;
+  background: none;
+  border: none;
+  margin: initial;
+  border-radius: none;
+  transition: .5s ease all;
+  line-height: initial;
+  padding: 0;
+  cursor: pointer;
+}
+.Information svg{
+  fill: rgb(228, 228, 228) ;
+}
+.Information svg:hover{
+  fill: #C7D3DD ;
+}
+.wrapper{
+  width: 85%;
 }
